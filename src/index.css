@@ -1,13 +1,154 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 0.875rem;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h1,
+h4,
+h2 {
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+}
+h1 {
+  font-size: 8rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+button {
+  border: none;
+  background-color: transparent;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  background-color: hsl(210, 36%, 96%);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+.about {
+  position: relative;
+  padding-bottom: 1rem;
+  margin: 5rem 0 0.75rem;
+  font-size: 2.5rem;
+}
+.about::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  width: 100px;
+  height: 0.2rem;
+  background-color: hsl(205, 78%, 60%);
+}
+
+.loading {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 5rem;
+}
+
+h1 {
+  color: hsl(209, 61%, 16%);
+}
+
+section {
+  width: 90vw;
+  max-width: 620px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.tour_card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  background-color: white;
+}
+img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  border-top-right-radius: 0.25rem;
+  border-top-left-radius: 0.25rem;
+}
+
+.tour_card-titel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.price {
+  color: hsl(205, 78%, 60%);
+  background-color: hsl(205, 100%, 96%);
+  margin: 0;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.info {
+  padding: 1.5rem 2rem;
+}
+
+.btn {
+  align-self: center;
+  width: 200px;
+  color: hsl(360, 67%, 44%);
+  border: 1px solid hsl(360, 67%, 44%);
+  padding: 0.25rem 1rem;
+  border-radius: 0.25rem;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+span {
+  color: hsl(205, 78%, 60%);
+}
+.tour__left {
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(210, 36%, 96%);
+  text-align: center;
+}
+
+.titel__left {
+  font-size: 2rem;
+  padding-top: 5rem;
+}
+.btn_refresh {
+  color: white;
+  letter-spacing: 0.25rem;
+  background-color: hsl(205, 78%, 60%);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
 }
